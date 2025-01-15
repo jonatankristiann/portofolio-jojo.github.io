@@ -1,0 +1,151 @@
+body {
+    font-family: "Changa", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    border-bottom: 3px solid black;
+}
+
+.logo span {
+    font-family: "Almendra";
+    font-weight: 100;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background-color: #444340;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #FFA500;
+}
+
+.social-icons a {
+    margin-left: 15px;
+    color: #333;
+}
+
+.social-icons a:hover {
+    color: #FFA500;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    background-color: #fff;
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 800px;
+}
+
+.intro-image {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.intro-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #6a0dad;
+}
+
+.intro-text {
+    position: absolute;
+    top: 0;
+    left: 110%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.intro-text span {
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+h1 br {
+    display: none;
+}
+
+p {
+    font-size: 18px;
+    color: #777;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FFA500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110%;
+    height: 110%;
+    background-color: rgba(255, 165, 0, 0.2);
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.btn:hover {
+    background-color: #FF8C00;
+}
+
